@@ -22,14 +22,22 @@
         padding: 0 1rem;
         background: rgba(0,0,0, .5);
       }
-      a {
-        color: limegreen;
+      .hidden {
+        position:absolute;
+        left:-10000px;
+        top:auto;
+        width:1px;
+        height:1px;
+        overflow:hidden;
       }
     </style>
   </head>
   <body>
     <section class="ascii-art">
-    <pre>
+      <p class="hidden">
+        you see a small black cat with wide eyes saying "Welcome to Meow Town!"
+      </p>
+      <pre aria-hidden="true">
  __    __     ______     ______     __     __
 /\ "-./  \   /\  ___\   /\  __ \   /\ \  _ \ \
 \ \ \-./\ \  \ \  __\   \ \ \/\ \  \ \ \/ ".\ \
@@ -49,7 +57,7 @@
      /\_/\  /
     (o _ o)
      (_____}~~~~<
-    </pre>
+      </pre>
     </section>
   </body>
 </html>
