@@ -2,25 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>meow.town</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style type="text/css">
       body {
         font-family: monospace;
         background-image: url("cat.jpg");
-        background-size: 130%;
+        background-size: 100% auto;
+        background-attachment: fixed;
         color: white;
         background-color: black;
-        width: 80ch;
-        font-size: 110%;
-        margin: 3rem;
       }
       .ascii-art {
-        width: 50ch;
-        margin: 2rem;
-        padding: 0 1rem;
-        background: rgba(0,0,0, .5);
+        background: rgba(0,0,0, .75);
+        float: right;
       }
       .hidden {
         position:absolute;
@@ -35,7 +31,7 @@
   <body>
     <section class="ascii-art">
       <p class="hidden">
-        you see a small black cat with wide eyes saying "Welcome to Meow Town!"
+        you see a small cat with wide eyes saying "Welcome to Meow Town!"
       </p>
       <pre aria-hidden="true">
  __    __     ______     ______     __     __
